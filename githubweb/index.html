@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Vault | Elite Footwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="promo-bar">Free Express Shipping on orders over $150!</div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">VELOCITY<span>VAULT</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">New Arrivals</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="icon-btn" onclick="document.getElementById('loginModal').style.display='flex'">Login</button>
+                <button class="cart-btn" onclick="document.getElementById('cartSidebar').style.right='0'">Cart (1)</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <h1>UNLEASH YOUR <br>POTENTIAL</h1>
+            <div class="hero-btns">
+                <a href="#products" class="cta-btn main">Shop Collection</a>
+                <a href="#" class="cta-btn secondary">View Lookbook</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <div class="benefit-item">
+            <h3>Eco-Friendly</h3>
+            <p>100% Recycled Materials</p>
+        </div>
+        <div class="benefit-item">
+            <h3>Cloud Tech</h3>
+            <p>Ultra-responsive cushioning</p>
+        </div>
+        <div class="benefit-item">
+            <h3>Global Style</h3>
+            <p>Designed in Milan & Tokyo</p>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="category-card lifestyle">
+            <div class="cat-content">
+                <h2>Lifestyle</h2>
+                <button class="shop-small">Explore</button>
+            </div>
+        </div>
+        <div class="category-card performance">
+            <div class="cat-content">
+                <h2>Performance</h2>
+                <button class="shop-small">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="section-header">
+            <h2>Hottest Drops</h2>
+            <p>Don't miss out on this week's limited releases.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img img-1"></div>
+                <h3>Zenith Runner v4</h3>
+                <p class="price">$145.00</p>
+                <button class="add-btn" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img img-2"></div>
+                <h3>Midnight Stealth</h3>
+                <p class="price">$180.00</p>
+                <button class="add-btn" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img img-3"></div>
+                <h3>Arctic Flux</h3>
+                <p class="price">$130.00</p>
+                <button class="add-btn" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img img-4"></div>
+                <h3>Solar Blaze</h3>
+                <p class="price">$160.00</p>
+                <button class="add-btn" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join the Vault</h2>
+        <p>Get early access to drops and exclusive discounts.</p>
+        <form class="subscribe-form" onsubmit="return false">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">VELOCITY<span>VAULT</span></div>
+                <p>Redefining footwear since 2026.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="social-links">
+                <a href="https://instagram.com/velocityvault" class="social-icon ig" target="_blank">Instagram</a>
+                <a href="https://facebook.com/velocityvault" class="social-icon fb" target="_blank">Facebook</a>
+                <a href="https://twitter.com/velocityvault" class="social-icon tw" target="_blank">Twitter</a>
+            </div>
+        
+    </footer>
+    <div id="loginModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+        
+        <div class="modal-header">
+            <h2>Welcome Back</h2>
+            <p>Enter your details to access the Vault.</p>
+        </div>
+
+        <form class="login-form" onsubmit="return false">
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="login-submit-btn">Sign In</button>
+            <p class="switch-form">New here? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+</div>
+<div id="productDetail" class="detail-overlay">
+    <div class="detail-container">
+        <span class="close-detail" onclick="document.getElementById('productDetail').style.display='none'">&times;</span>
+        
+        <div class="detail-grid">
+            <div class="detail-img-box">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Shoe" id="mainImage">
+            </div>
+
+            <div class="detail-info">
+                <span class="category-tag">Running / Performance</span>
+                <h1>ZENITH RUNNER V4</h1>
+                <p class="detail-price">$145.00</p>
+                
+                <p class="description">
+                    Built for speed and ultimate comfort. The V4 features our signature "Cloud-Pulse" cushioning and a breathable mesh upper designed for long-distance durability.
+                </p>
+
+                <div class="selector">
+                    <h4>Select Size</h4>
+                    <div class="size-options">
+                        <button class="size-btn">US 8</button>
+                        <button class="size-btn active">US 9</button>
+                        <button class="size-btn">US 10</button>
+                        <button class="size-btn">US 11</button>
+                    </div>
+                </div>
+
+                <div class="detail-actions">
+                    <button class="add-to-cart-big" onclick="alert('Success: Added to Cart!')">Add to Cart</button>
+                    <button class="wishlist-btn">♥</button>
+                </div>
+                
+                <p class="shipping-info">✓ Free delivery on orders over $150</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-card" onclick="document.getElementById('productDetail').style.display='flex'">
+    <div class="product-img img-1"></div>
+    <h3>Zenith Runner v4</h3>
+    <p class="price">$145.00</p>
+    <button class="add-btn">Quick View</button>
+</div>
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Vault</h2>
+        <span class="close-cart" onclick="document.getElementById('cartSidebar').style.right='-400px'">&times;</span>
+    </div>
+
+    <div class="cart-body">
+        <div class="cart-item">
+            <div class="cart-item-img"></div>
+            <div class="cart-item-details">
+                <h4>Zenith Runner v4</h4>
+                <p>Size: US 9</p>
+                <p class="cart-item-price">$145.00</p>
+            </div>
+            <button class="remove-item">&times;</button>
+        </div>
+        
+        <p class="empty-msg" style="display:none;">Your vault is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="subtotal">
+            <span>Subtotal</span>
+            <span>$145.00</span>
+        </div>
+        <button class="checkout-btn" onclick="document.getElementById('checkoutModal').style.display='flex'">Proceed to Checkout</button>
+        <p class="tax-note">Taxes and shipping calculated at checkout.</p>
+    </div>
+</div>
+<div id="checkoutModal" class="modal-overlay">
+    <div class="modal-content checkout-box">
+        <span class="close-btn" onclick="document.getElementById('checkoutModal').style.display='none'">&times;</span>
+        
+        <div class="modal-header">
+            <h2>Secure Checkout</h2>
+            <p>Select your preferred payment method</p>
+        </div>
+
+        <div class="payment-methods">
+            <label class="payment-option">
+                <input type="radio" name="payment" checked>
+                <div class="option-content">
+                    <span class="icon">💳</span>
+                    <div class="text">
+                        <strong>Credit / Debit Card</strong>
+                        <p>Visa, Mastercard, Amex</p>
+                    </div>
+                </div>
+            </label>
+
+            <label class="payment-option">
+                <input type="radio" name="payment">
+                <div class="option-content">
+                    <span class="icon">🅿️</span>
+                    <div class="text">
+                        <strong>PayPal</strong>
+                        <p>Pay with your PayPal account</p>
+                    </div>
+                </div>
+            </label>
+
+            <label class="payment-option">
+                <input type="radio" name="payment">
+                <div class="option-content">
+                    <span class="icon">₿</span>
+                    <div class="text">
+                        <strong>Cryptocurrency</strong>
+                        <p>Bitcoin, Ethereum, Solana</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="order-summary">
+            <div class="summary-line"><span>Total Amount:</span> <strong>$145.00</strong></div>
+        </div>
+
+        <button class="pay-now-btn" onclick="alert('Payment Successful! Welcome to the Vault.')">Complete Purchase</button>
+        
+        <div class="security-tag">
+            <span>🔒 Encrypted & Secure Connection</span>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="logo">VELOCITY<span>VAULT</span></div>
+            <p>Premium footwear for those who never stop moving.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>The Vault Location</h4>
+            <p>📍 123 Sneaker Street, Fashion District</p>
+            <p>New York, NY 10001</p>
+            <p><strong>Coordinates:</strong> 40.7128° N, 74.0060° W</p>
+            <br>
+            <a href="https://www.google.com/maps/search/?api=1&query=40.7128,-74.0060" target="_blank" class="map-link">Open in Google Maps</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <ul>
+                <li>Mon - Fri: 10am - 9pm</li>
+                <li>Sat - Sun: 11am - 6pm</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1715634567890!5m2!1sen!2sus" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <div class="bottom-bar">
+        &copy; 2026 Velocity Vault. All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>
